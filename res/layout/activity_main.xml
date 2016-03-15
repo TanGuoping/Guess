@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+     >
+
+    <TextView
+        android:id="@+id/labelId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="猜拳游戏" />
+    
+    <ImageView 
+        android:id="@+id/icon1Id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/labelId"
+        android:layout_toLeftOf="@id/labelId"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        />
+    
+    <ImageView 
+        android:id="@+id/icon2Id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/labelId"
+        android:layout_toRightOf="@id/labelId"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/name1Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon1Id"
+        android:layout_alignLeft="@id/icon1Id"
+        android:textSize="20sp"
+        android:text="小明"
+        />
+    
+    <TextView 
+        android:id="@+id/name2Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon2Id"
+        android:layout_alignLeft="@id/icon2Id"
+        android:textSize="20sp"
+        android:text="小花"
+        />
+    
+    
+    <RadioGroup 
+        android:id="@+id/group1Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name1Id"
+        android:layout_alignLeft="@id/icon1Id"
+        >
+        
+        <RadioButton 
+            android:id="@+id/a1Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="石头"
+            />
+        
+        <RadioButton 
+            android:id="@+id/a2Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="剪刀"
+            />
+        
+        <RadioButton 
+            android:id="@+id/a3Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="布"
+            />
+        
+    </RadioGroup>
+    
+    
+    <RadioGroup 
+        android:id="@+id/group2Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name2Id"
+        android:layout_alignLeft="@id/icon2Id"
+        >
+        
+        <RadioButton 
+            android:id="@+id/b1Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="石头"
+            />
+        
+        <RadioButton 
+            android:id="@+id/b2Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="剪刀"
+            />
+        
+        <RadioButton 
+            android:id="@+id/b3Id"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="布"
+            />
+        
+    </RadioGroup>
+    
+    <Button 
+        android:id="@+id/okId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group1Id"
+        android:text="确定"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/okId"
+        android:layout_alignLeft="@id/group1Id"
+        android:text="结果"
+        />
+    
+    <TextView 
+        android:id="@+id/resultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/okId"
+        android:layout_alignLeft="@id/group2Id"
+        android:text="测试结果"
+        />
+    
+    
+
+</RelativeLayout>
