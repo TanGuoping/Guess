@@ -59,27 +59,27 @@ public class MainActivity extends Activity {
 		public void onCheckedChanged(RadioGroup group, int checkedId) {
 			// TODO Auto-generated method stub
 			if(checkedId==R.id.a1Id){
-				a="Ê¯Í·";
+				a="çŸ³å¤´";
 			}
 			
 			else if(checkedId==R.id.a2Id){
-				a="¼ôµ¶";
+				a="å‰ªåˆ€";
 			}
 			
 			else if(checkedId==R.id.a3Id){
-				a="²¼";
+				a="å¸ƒ";
 			}
 			
 			if(checkedId==R.id.b1Id){
-				b="Ê¯Í·";
+				b="çŸ³å¤´";
 			}
 			
 			else if(checkedId==R.id.b2Id){
-				b="¼ôµ¶";
+				b="å‰ªåˆ€";
 			}
 			
 			else if(checkedId==R.id.b3Id){
-				b="²¼";
+				b="å¸ƒ";
 			}
 			
 			
@@ -96,15 +96,15 @@ public class MainActivity extends Activity {
 			// TODO Auto-generated method stub
 			
 			if(a==b && a!=null){
-				result.setText("Æ½¾Ö");
+				result.setText("å¹³å±€");
 			}
 			
-			else if((a=="Ê¯Í·" && b=="¼ôµ¶") || (a=="¼ôµ¶" && b=="²¼") || (a=="²¼" && b=="Ê¯Í·")){
-				result.setText("Ğ¡Ã÷Ê¤");
+			else if((a=="çŸ³å¤´" && b=="å‰ªåˆ€") || (a=="å‰ªåˆ€" && b=="å¸ƒ") || (a=="å¸ƒ" && b=="çŸ³å¤´")){
+				result.setText("å°æ˜èƒœ");
 			}
 			
-			else if((b=="Ê¯Í·" && a=="¼ôµ¶") || (b=="¼ôµ¶" && a=="²¼") || (b=="²¼" && a=="Ê¯Í·")){
-				result.setText("Ğ¡»¨Ê¤");
+			else if((b=="çŸ³å¤´" && a=="å‰ªåˆ€") || (b=="å‰ªåˆ€" && a=="å¸ƒ") || (b=="å¸ƒ" && a=="çŸ³å¤´")){
+				result.setText("å°èŠ±èƒœ");
 			}
 			
 			
